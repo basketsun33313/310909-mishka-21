@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Егоров](https://up.htmlacademy.ru/adaptive/21/user/310909).
-* Наставник: `Неизвестно`.
+* Наставник: `Виктория Никитина`.
 
 ---
 
