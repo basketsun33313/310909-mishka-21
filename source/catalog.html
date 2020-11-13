@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Мишка, вязаные игрушки">
+    <meta name="description" content="Мишка-уникальный магазин мягких игрушек">
+    <title>HTML Academy: Мишка</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="css/">
+  </head>
+  <body class="catalog-page__body">
+    <header class="page__header container">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" alt="Логотип сайта">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="mobile-catalog">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="mobile-catalog">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="mobile-catalog">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="mobile-catalog">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="catalog-header__heading-wrapper">
+        <h1 class="catalog-header__heading">Каталог товаров</h1>
+      </div>
+    </header>
+    <main class="catalog-page-main container">
+      <section class="catalog-cards">
+        <ul class="catalog-cards__list">
+          <li class="catalog-cards__item card">
+            <img src="" alt="Зайчик-попрыгайчик">
+            <h3 class="catalog-cards__heading">Зайчик-попрыгайчик</h3>
+            <p class="catalog-cards__description">Рост 30 см, вес 200 г</p>
+            <span class="catalog-cards__price">1 200 руб.</span>
+          </li>
+          <li class="catalog-cards__item card">
+            <img src="" alt="Корзинка для белья">
+            <h3 class="catalog-cards__heading">Корзинка для белья</h3>
+            <p class="catalog-cards__description">Диаметр 15 см, высота 10 см</p>
+            <span class="catalog-cards__price">690 руб.</span>
+          </li>
+          <li class="catalog-cards__item card">
+            <img src="" alt="Большая корзинка для игрушек">
+            <h3 class="catalog-cards__heading">Большая корзинка для игрушек</h3>
+            <p class="catalog-cards__description">Диаметр 30 см, высота 30 см</p>
+            <span class="catalog-cards__price">1 500 руб.</span>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog-video">
+        <h2 class="catalog-video__heading">Процесс производства</h2>
+        <iframe src="" frameborder="0" id="" name=""></iframe>
+        <p class="catalog-video__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="catalog-video__button" type="button" href="#">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="page-footer container">
+      <ul class="footer-social__list">
+        <li class="footer-social__item">
+          <a class="footer-social__link" href="#" aria-label="Наш инстаграмм"></a>
+        </li>
+        <li class="footer-social__item">
+          <a class="footer-social__link" href="#" aria-label="Наш вконтакте"></a>
+        </li>
+        <li class="footer-social__item">
+          <a class="footer-social__link" href="#" aria-label="Наш твиттер"></a>
+        </li>
+      </ul>
+      <span class="footer-develops__description">Разработано
+        <a class="footer-develops__link" href="#"></a>
+      </span>
+    </footer>
+    <section class="modal-cart">
+      <h2 class="modal-cart__heading">Добавить в корзину</h2>
+      <span class="modal-cart__description">Выберите размер:</span>
+      <ul class="modal-cart__list">
+        <li class="modal-cart__item">
+          <button class="modal-cart__button-size" type="button" aria-label="Самый маленький">S</button>
+        </li>
+        <li class="modal-cart__item">
+          <button class="modal-cart__button-size" type="button" aria-label="Средний">M</button>
+        </li>
+        <li class="modal-cart__item">
+          <button class="modal-cart__button-size" type="button" aria-label="Большой">L</button>
+        </li>
+      </ul>
+      <button class="modal-cart__button" type="button" aria-label="Добавить в корзину">Добавить</button>
+    </section>
+  </body>
+</html>
