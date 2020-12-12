@@ -1,0 +1,87 @@
+@black: #000000;
+@icon-hover: #46C1AE;
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  border: none;
+  background-color: transparent;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    top: 7px;
+    right: 0px;
+    background-image: url("../img/menu-close.svg");
+    cursor: pointer;
+  }
+}
+
+.main-nav__wrapper {
+  text-align: center;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.main-nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #ECECEC;
+    height: 1px;
+    width: 100vw;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+.main-nav__link {
+  display: block;
+  padding: 30px 0 26px 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  color: @black;
+  position: relative;
+  text-align: left;
+}
+
+.main-nav__link-icon__search {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+
+  &:hover,
+  &:focus {
+    fill: @icon-hover;
+  }
+}
+
+.main-nav__link-icon__cart {
+  position: absolute;
+  top: 30px;
+  left: -27px;
+
+  &:hover,
+  &:focus {
+    fill: @icon-hover;
+  }
+}
+

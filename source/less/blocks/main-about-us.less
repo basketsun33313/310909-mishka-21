@@ -1,0 +1,59 @@
+.main-about-us__heading {
+  margin: 0 30px;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.main-about-us__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-about-us__item {
+  margin: 0 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  padding-bottom: 66px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -52px;
+    left: 8px;
+    width: 33px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  &--eco::before {
+    background-image: url("../img/icon-flower.svg");
+  }
+  &--style::before {
+    background-image: url("../img/icon-money.svg");
+    width: 47px;
+  }
+  &--likes::before {
+    background-image: url("../img/icon-heart.svg");
+  }
+  &--love::before {
+    background-image: url("../img/icon-ball.svg");
+  }
+  &--support::before {
+    background-image: url("../img/icon-rocket.svg");
+    width: 55px;
+  }
+  &--box::before {
+    background-image: url("../img/icon-gift.svg");
+  }
+}
+
+
