@@ -25,3 +25,34 @@
   margin-top: 17px;
 }
 
+
+@media (min-width: @tablet-width) {
+  .inner-main__heading {
+    font-size: 43px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 770px;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-tablet.svg");
+    }
+  }
+
+  .inner-main__wrapper-form {
+    padding: 0 40px;
+  }
+
+  .inner-main__form-description {
+    font-size: 17px;
+    width: 668px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+
+}

@@ -155,3 +155,66 @@
   padding: 16px 37px 16px 37px;
   cursor: pointer;
 }
+
+@media (min-width: @tablet-width) {
+  .form-filter__fieldset {
+    position: static;
+  }
+
+  .form-filter__list:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .form-filter__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 179px;
+  }
+
+  .form-filter__list-type__text {
+    margin-left: 179px;
+  }
+
+  .form-filter__item-type__text {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-filter__label-text {
+    margin-right: 20px;
+  }
+
+  .form-filter__wrapper-tablet {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-filter__label-telephone {
+    margin-right: 100px;
+  }
+
+  .form-filter__label-email {
+    margin-right: 100px;
+  }
+
+  .form-filter__input-text__icon-phone {
+
+  }
+
+  .form-filter__button {
+    width: 230px;
+    font-size: 17px;
+    order: 1;
+    margin-right: 200px;
+  }
+
+  .form-filter__under-description {
+    order: 2;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+
+}

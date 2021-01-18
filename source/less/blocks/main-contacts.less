@@ -30,10 +30,6 @@
   font-size: 14px;
 }
 
-.main-contacts__description:nth-child(2) {
-  padding-top: 30px;
-}
-
 .main-contacts__link {
   width: 183px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -41,6 +37,7 @@
   color: #000000;
   padding-top: 15px;
   font-size: 14px;
+  border-bottom: 1px solid #62D1BA;
 }
 
 .main-contacts__address {
@@ -70,4 +67,73 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 12px 50px 9px 49px;
+
+  &:hover,
+  &:focus {
+    background-color: #444444;
+    color: white;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .main-contacts {
+    margin-bottom: 20px;
+  }
+
+  .main-contacts__wrapper {
+    padding: 0 40px;
+    position: relative;
+  }
+
+  .main-contacts__heading {
+    font-size: 43px;
+    position: absolute;
+    top: -49px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -363px;
+      width: 47px;
+      height: 80.9px;
+      background-image: url("../img/Vector.svg");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3.83px;
+      height: 80.9px;
+      top: 0;
+      right: -320px;
+      background-color: black;
+    }
+  }
+
+  .main-contacts__wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  .main-contacts__address {
+    width: 180px;
+  }
+
+  .main-contacts__button {
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-contacts__heading {
+    font-size: 53px;
+  }
 }
