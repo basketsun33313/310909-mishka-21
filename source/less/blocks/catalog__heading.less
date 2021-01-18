@@ -13,3 +13,18 @@
   padding-top: 73px;
   padding-bottom: 73px;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog__heading {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      background-image: url("../img/zigzag-fill-tablet.svg");
+      width: 770px;
+      height: 24px;
+    }
+  }
+}

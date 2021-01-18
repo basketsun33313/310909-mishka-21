@@ -84,4 +84,42 @@
   padding: 18px 0 18px 0;
   text-align: center;
   margin: 0 45px 33px;
+
+  &:hover,
+  &:focus {
+    background-color: #444444;
+    color: white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-video {
+    margin-top: 30px;
+    padding: 0 50px;
+  }
+
+  .catalog-video__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-video__heading {
+    order: 2;
+  }
+
+  .catalog-video__wrapper-video {
+    order: 1;
+  }
+
+  .catalog-video__description {
+    order: 3;
+  }
+
+  .catalog-video__button {
+    order: 4;
+  }
 }
