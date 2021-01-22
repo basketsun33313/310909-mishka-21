@@ -31,7 +31,7 @@
 }
 
 .catalog-cards__heading {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -50,7 +50,7 @@
 
 .catalog-cards__price {
   .indents-null;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -104,14 +104,31 @@
   }
 
   .catalog-cards__wrapper-price {
-    margin-top: 100px;
-  }
-
-  .catalog-video__wrapper {
-
+    margin-top: 150px;
+    border-top: 1px solid silver;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .catalog-cards__list {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .catalog-cards__item {
+    display: block;
+    width: 314px;
+  }
+
+  .catalog-cards__image {
+    width: 314px;
+  }
+
+  .catalog-cards__price-icon__cart {
+    margin-right: 10px;
+  }
+
+  .catalog-cards__wrapper-price {
+    width: 250px
+  }
 }

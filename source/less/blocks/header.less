@@ -30,6 +30,19 @@
   .header__logo {
     left: 48px;
     transform: translateX(0);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .header__logo:hover .header__logo-image,
+  .header__logo:focus .header__logo-image {
+    opacity: 0.6;
+  }
+
+  .header__logo:active .header__logo-image {
+    opacity: 0.3;
   }
 }
 

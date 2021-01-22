@@ -49,6 +49,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     width: 121px;
     height: 92px;
   }
@@ -74,7 +75,7 @@
 .catalog-video__button {
   display: block;
   text-transform: uppercase;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -121,5 +122,17 @@
 
   .catalog-video__button {
     order: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .catalog-video__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .catalog-video__wrapper-video {
+    width: 682px;
   }
 }

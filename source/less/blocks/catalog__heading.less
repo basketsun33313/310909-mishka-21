@@ -4,7 +4,7 @@
 
 .catalog__heading-item {
   .indents-null;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 27px;
@@ -26,5 +26,25 @@
       width: 770px;
       height: 24px;
     }
+  }
+
+  .catalog__heading-item {
+    font-size: 43px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .catalog__heading {
+    position: relative;
+
+    &::after {
+      width: 1130px;
+      height: 34px;
+    }
+  }
+
+  .catalog__heading-item {
+    font-size: 53px;
   }
 }

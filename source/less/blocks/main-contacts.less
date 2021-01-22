@@ -9,7 +9,7 @@
 .main-contacts__heading {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -38,6 +38,16 @@
   padding-top: 15px;
   font-size: 14px;
   border-bottom: 1px solid #62D1BA;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: #46C1AE;
+  }
+
+  &:active {
+    border: none;
+  }
 }
 
 .main-contacts__address {
@@ -57,7 +67,7 @@
 }
 
 .main-contacts__button {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -72,6 +82,11 @@
   &:focus {
     background-color: #444444;
     color: white;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -121,6 +136,14 @@
     width: 180px;
   }
 
+  .main-contacts__description {
+    margin-left: 10px;
+  }
+
+  .main-contacts__wrapper-button {
+    margin: 0 auto;
+  }
+
   .main-contacts__button {
     margin: 0 auto;
   }
@@ -133,7 +156,12 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .main-contacts__heading {
-    font-size: 53px;
+  .main-contacts__wrapper {
+    flex-direction: column;
   }
+
+  .main-contacts__map {
+    width: 527px;
+  }
+
 }
