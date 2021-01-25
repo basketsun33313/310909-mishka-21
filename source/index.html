@@ -7,14 +7,14 @@
   <meta name="description" content="Мишка-уникальный магазин мягких игрушек">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="preload" href="./fonts/opensans.woff" as="font"/>
-  <link rel="preload" href="./fonts/opensans.woff2" as="font"/>
-  <link rel="preload" href="./fonts/opensansbold.woff" as="font"/>
-  <link rel="preload" href="./fonts/opensansbold.woff2" as="font"/>
+  <link rel="preload" href="./fonts/opensans.woff" as="font" />
+  <link rel="preload" href="./fonts/opensans.woff2" as="font" />
+  <link rel="preload" href="./fonts/opensansbold.woff" as="font" />
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page-body">
+<body class="page-body no-js">
   <header class="page-body__header header container">
     <a class="header__logo">
       <picture>
@@ -57,8 +57,19 @@
               Корзина: пока пуста
             </a>
           </li>
+          <li class="main-nav__item main-nav__item--desktop-only">
+            <a class="main-nav__link" href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--desktop-only">
+            <a class="main-nav__link" href="#">
+              Распродажа
+            </a>
+          </li>
         </ul>
       </div>
+      <p class="main-nav__warning">Бесплатная доставка по России</p>
     </nav>
   </header>
   <main class="page-main container">
@@ -81,31 +92,31 @@
         <h3 class="main-goods__best">Товар недели</h3>
       </div>
       <div class="main-goods__wrapper-tablet">
-      <p class="main-goods__description">
-        Экологически чистая пряжа,
-        ручная работа. Доступны в шести расцветках, и трех размерах.
-      </p>
-      <div class="main-goods__wrapper-table">
-        <table class="main-goods__table">
-          <tr class="main-goods__table-row">
-            <td class="main-goods__table-box main-goods__table-box--params">Цвет:</td>
-            <td class="main-goods__table-box">«Тиффани»/серый</td>
-          </tr>
-          <tr class="main-goods__table-row">
-            <td class="main-goods__table-box">Диаметр:</td>
-            <td class="main-goods__table-box">25 см</td>
-          </tr>
-          <tr class="main-goods__table-row">
-            <td class="main-goods__table-box">Высота:</td>
-            <td class="main-goods__table-box">15 см</td>
-          </tr>
-        </table>
-      </div>
-      <div class="main-goods__wrapper-image">
-        <img src="./img/knitted-basket.webp" alt="Вязаные корзины" class="main-goods__image">
-      </div>
-      <div class="main-goods__price">Цена: 990 руб.</div>
-      <a class="main-goods__button" href="#">Заказать</a>
+        <p class="main-goods__description">
+          Экологически чистая пряжа,
+          ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <div class="main-goods__wrapper-table">
+          <table class="main-goods__table">
+            <tr class="main-goods__table-row">
+              <td class="main-goods__table-box main-goods__table-box--params">Цвет:</td>
+              <td class="main-goods__table-box">«Тиффани»/серый</td>
+            </tr>
+            <tr class="main-goods__table-row">
+              <td class="main-goods__table-box">Диаметр:</td>
+              <td class="main-goods__table-box">25 см</td>
+            </tr>
+            <tr class="main-goods__table-row">
+              <td class="main-goods__table-box">Высота:</td>
+              <td class="main-goods__table-box">15 см</td>
+            </tr>
+          </table>
+        </div>
+        <div class="main-goods__wrapper-image">
+          <img src="./img/knitted-basket.webp" alt="Вязаные корзины" class="main-goods__image">
+        </div>
+        <div class="main-goods__price">Цена: 990 руб.</div>
+        <a class="main-goods__button" href="#">Заказать</a>
       </div>
     </section>
     <section class="main-about-us">
@@ -179,71 +190,72 @@
         </div>
       </div>
       <div class="main-contacts__wrapper-map">
-      <iframe class="main-contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461607064!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1606659425991!5m2!1sru!2sru"
-        height="454" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="main-contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461607064!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1606659425991!5m2!1sru!2sru"
+          height="454" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
       <div class="main-contacts__wrapper-img-map">
         <picture>
-            <source srcset="./img/map-desktop.jpg" media="(min-width: 1150px)">
-            <source srcset="./img/map-tablet.jpg" media="(min-width: 768px)">
-            <img class="main-contacts__map-image" src="img/map-mobile.jpg" alt="Карта как проехать">
+          <source srcset="./img/map-desktop.jpg" media="(min-width: 1150px)">
+          <source srcset="./img/map-tablet.jpg" media="(min-width: 768px)">
+          <img class="main-contacts__map-image" src="img/map-mobile.jpg" alt="Карта как проехать">
         </picture>
       </div>
-        <div class="main-contacts__wrapper">
-          <a class="main-contacts__button" href="#" aria-label="Напишите нам">Нaпишите нам</a>
-        </div>
+      <div class="main-contacts__wrapper">
+        <a class="main-contacts__button" href="#" aria-label="Напишите нам">Нaпишите нам</a>
+      </div>
     </section>
   </main>
   <footer class="page-footer footer container">
     <div class="footer__social-wrapper">
-    <a href="#" class="footer__logo">
-      <svg width="102" height="34" viewBox="0 0 102 34" fill="000000" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="./img/sprite.svg#logo-footer"></use>
-      </svg>
-    </a>
-    <ul class="footer__social-list">
-      <li class="footer__social-item">
-        <a class="footer__social-link" href="#" aria-label="Наш инстаграмм">
-          <svg width="22" height="22" class="footer__social-link-icon" viewBox="0 0 22 22"
-            xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="./img/sprite.svg#insta"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link" href="#" aria-label="Наш вконтакте">
-          <svg width="15" height="28" class="footer__social-link-icon" viewBox="0 0 15 28" fill="#000000"
-            xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="./img/sprite.svg#fb"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer__social-item">
-        <a class="footer__social-link" href="#" aria-label="Наш твиттер">
-          <svg width="23" height="20" class="footer__social-link-icon" viewBox="0 0 23 20" fill="#000000"
-            xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="./img/sprite.svg#twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <p class="footer__develops-description">Разработано
-      <a class="footer__develops-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg width="27" height="35" class="footer__develops-link-icon" viewBox="0 0 27 35" fill="#63D1BB"
-          xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+      <a href="#" class="footer__logo">
+        <svg width="102" height="34" viewBox="0 0 102 34" fill="000000" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
-    </p>
-  </div>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" aria-label="Наш инстаграмм">
+            <svg width="22" height="22" class="footer__social-link-icon" viewBox="0 0 22 22"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" aria-label="Наш вконтакте">
+            <svg width="15" height="28" class="footer__social-link-icon" viewBox="0 0 15 28" fill="#000000"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" aria-label="Наш твиттер">
+            <svg width="23" height="20" class="footer__social-link-icon" viewBox="0 0 23 20" fill="#000000"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__develops-description">Разработано
+        <a class="footer__develops-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="35" class="footer__develops-link-icon" viewBox="0 0 27 35" fill="#63D1BB"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </p>
+    </div>
   </footer>
   <section class="modal-cart">
     <h2 class="modal-cart__heading">Добавить в корзину</h2>
     <span class="modal-cart__description">Выберите размер:</span>
     <ul class="modal-cart__list">
       <li class="modal-cart__item">
-        <button class="modal-cart__button-size modal-cart__button-size--active" type="button" aria-label="Самый маленький">S</button>
+        <button class="modal-cart__button-size modal-cart__button-size--active" type="button"
+          aria-label="Самый маленький">S</button>
       </li>
       <li class="modal-cart__item">
         <button class="modal-cart__button-size" type="button" aria-label="Средний">M</button>

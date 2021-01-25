@@ -2,15 +2,17 @@
 @icon-hover: #63D1BB;
 .main-nav {
   position: relative;
+}
 
-  &::after {
-    content: "Бесплатная доставка по России";
-    position: absolute;
-    top: 0;
-    right: 18px;
-    color: #444444;
-    font-family: "Open Sans", "Arial", sans-serif;
-  }
+.main-nav__warning{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 18px;
+  color: #444444;
+  font-family: "Open Sans", "Arial", sans-serif;
+  display: none;
 }
 
 .main-nav__toggle {
@@ -34,6 +36,10 @@
   &:focus {
     outline: none;
   }
+}
+
+.no-js .main-nav__toggle{
+  display: none;
 }
 
 .main-nav__wrapper {
@@ -63,6 +69,10 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+
+  }
+  &--desktop-only{
+    display: none;
   }
 }
 
@@ -121,6 +131,9 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav__warning{
+    display: block;
+  }
   .main-nav__toggle::before {
     display: none;
   }
@@ -131,15 +144,16 @@
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-    flex-wrap: wrap;
     padding-left: 49px;
     padding-right: 36%;
+    margin-left: -37px;
   }
 
   .main-nav__item {
-    margin-right: 37px;
+    margin-left: 37px;
   }
 
   .main-nav__item::after {
@@ -220,11 +234,43 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  .main-nav{
+    width: 1150px;
+    margin: 0 auto;
   }
+
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: 222px auto;
+    align-items: center;
+    padding-right: 58%;
+    margin-top: 33px;
+    min-height: 103px;
+    margin-left: 0;
+    padding-left: 0;
+    justify-items: start;
+  }
+
+  .main-nav__item{
+    margin-left: 0;
+    margin-bottom: 21px;
+    padding-left: 50px;
+  }
+  .main-nav__item:nth-child(1),
+  .main-nav__item:nth-child(2){
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+  .main-nav__link {
+    font-size: 15px;
+
+    .main-nav__item:nth-child(1) &,
+    .main-nav__item:nth-child(2) &{
+      font-size: 17px;
+
+    }
+  }
+
 
   .main-nav__link {
 
@@ -232,14 +278,26 @@
 
   .main-nav__item--search {
     position: absolute;
-    top: -3px;
-    left: 70%;
+    top: -32px;
+    left: auto;
+    right: 318px;
+    width: 82px;
+    height: 88px;
   }
 
   .main-nav__item--cart {
     position: absolute;
-    top: 0;
-    right: 33px;
+    top: -31px;
+    right: 2px;
+  }
+
+  .main-nav__item--desktop-only{
+    display: block;
+  }
+  .main-nav__warning {
+    font-size: 15px;
+    top: 79px;
+    right: 51px;
   }
 }
 

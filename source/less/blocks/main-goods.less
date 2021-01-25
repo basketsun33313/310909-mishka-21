@@ -127,16 +127,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -40px;
-      left: 2px;
-      width: 770px;
-      height: 24px;
-      background-image: url("../img/zigzag-fill-tablet.svg");
-    }
   }
 
   .main-goods__heading {
@@ -181,10 +171,15 @@
 
 @media (min-width: @desktop-width) {
   .main-goods__wrapper-tablet {
-    padding-left: 225px;
+    padding-left: 0;
+    width: 1050px;
+    margin: 0 auto;
   }
 
   .main-goods {
+    z-index: 10;
+    width: 1050px;
+    margin: 0 auto;
     &::after {
       width: 1050px;
       height: 24px;
@@ -196,16 +191,7 @@
   .main-goods__wrapper-heading {
     display: flex;
     justify-content: flex-start;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -40px;
-      left: 2px;
-      width: 1150px;
-      height: 34px;
-      background-repeat: repeat-x;
-    }
+    padding-top: 66px;
   }
 
   .main-goods__heading {
