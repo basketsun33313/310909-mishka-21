@@ -77,7 +77,32 @@
       <section class="catalog-cards">
         <ul class="catalog-cards__list">
           <li class="catalog-cards__item card">
-            <img class="catalog-cards__image" src="img/catalog-card-first.webp" alt="Зайчик-попрыгайчик">
+            <a href="#" class="catalog-cards__image-link">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="
+                    ./img/catalog-card-first-desktop1x.webp 1x,
+                    ./img/catalog-card-first-desktop2x.webp 2x
+                  " />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                    ./img/catalog-card-first-tablet1x.webp 1x,
+                    ./img/catalog-card-first-tablet2x.webp 2x
+                  " />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                    ./img/catalog-card-first-mobile1x.webp 1x,
+                    ./img/catalog-card-first-mobile2x.webp 2x
+                  " />
+                <source media="(min-width: 1150px)" srcset="
+                    ./img/catalog-card-first-desktop1x.png       1x,
+                    ./img/catalog-card-first-desktop2x.png       2x
+                  " />
+                <source media="(min-width: 768px)" srcset="
+                    ./img/catalog-card-first-tablet1x.png       1x,
+                    ./img/catalog-card-first-tablet2x.png       2x
+                  " />
+                <img class="catalog-cards__image" src="img/catalog-card-first-mobile1x.png"
+                  srcset="img/catalog-card-first-mobile2x.png 2x" alt="Зайчик-попрыгайчик"/>
+              </picture>
+            </a>
             <div class="catalog-cards__wrapper">
               <h3 class="catalog-cards__heading">Зайчик-попрыгайчик</h3>
               <p class="catalog-cards__description">Рост 30 см, вес 200 г</p>
@@ -91,7 +116,32 @@
             </div>
           </li>
           <li class="catalog-cards__item card">
-            <img class="catalog-cards__image" src="img/catalog-card-second.webp" alt="Корзинка для белья">
+            <a href="#" class="catalog-cards__image-link">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="
+                    ./img/catalog-card-second-desktop1x.webp 1x,
+                    ./img/catalog-card-second-desktop2x.webp 2x
+                  " />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                    ./img/catalog-card-second-tablet1x.webp 1x,
+                    ./img/catalog-card-second-tablet2x.webp 2x
+                  " />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                    ./img/catalog-card-second-mobile1x.webp 1x,
+                    ./img/catalog-card-second-mobile2x.webp 2x
+                  " />
+                <source media="(min-width: 1150px)" srcset="
+                    ./img/catalog-card-second-desktop1x.png       1x,
+                    ./img/catalog-card-second-desktop2x.png       2x
+                  " />
+                <source media="(min-width: 768px)" srcset="
+                    ./img/catalog-card-second-tablet1x.png       1x,
+                    ./img/catalog-card-second-tablet2x.png       2x
+                  " />
+                <img class="catalog-cards__image" src="img/catalog-card-second-mobile1x.png"
+                  srcset="img/catalog-card-second-mobile2x.png 2x" alt="Корзинка для белья"/>
+              </picture>
+            </a>
             <div class="catalog-cards__wrapper">
               <h3 class="catalog-cards__heading">Корзинка для белья</h3>
               <p class="catalog-cards__description">Диаметр 15 см, высота 10 см</p>
@@ -105,7 +155,32 @@
             </div>
           </li>
           <li class="catalog-cards__item card">
-            <img class="catalog-cards__image" src="img/catalog-card-third.webp" alt="Большая корзинка для игрушек">
+            <a href="#" class="catalog-cards__image-link">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="
+                    ./img/catalog-card-third-desktop1x.webp 1x,
+                    ./img/catalog-card-third-desktop2x.webp 2x
+                  " />
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                    ./img/catalog-card-third-tablet1x.webp 1x,
+                    ./img/catalog-card-third-tablet2x.webp 2x
+                  " />
+                <source type="image/webp" media="(min-width: 320px)" srcset="
+                    ./img/catalog-card-third-mobile1x.webp 1x,
+                    ./img/catalog-card-third-mobile2x.webp 2x
+                  " />
+                <source media="(min-width: 1150px)" srcset="
+                    ./img/catalog-card-third-desktop1x.png       1x,
+                    ./img/catalog-card-third-desktop2x.png       2x
+                  " />
+                <source media="(min-width: 768px)" srcset="
+                    ./img/catalog-card-third-tablet1x.png       1x,
+                    ./img/catalog-card-third-tablet2x.png       2x
+                  " />
+                <img class="catalog-cards__image" src="img/catalog-card-third-mobile1x.png"
+                  srcset="img/catalog-card-third-mobile2x.png 2x" alt="Большая корзинка для игрушек"/>
+              </picture>
+            </a>
             <div class="catalog-cards__wrapper">
               <h3 class="catalog-cards__heading">Большая корзинка<br> для игрушек</h3>
               <p class="catalog-cards__description">Диаметр 30 см, высота 30 см</p>
@@ -124,7 +199,30 @@
         <div class="catalog-video__wrapper">
           <h2 class="catalog-video__heading">Процесс производства</h2>
           <div class="catalog-video__wrapper-video">
-            <video class="catalog-video__container-video" src="#" poster="img/catalog-video-container.webp"></video>
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="
+                  ./img/catalog-video-container-desktop1x.webp 1x,
+                  ./img/catalog-video-container-desctop2x.webp 2x
+                " />
+              <source type="image/webp" media="(min-width: 768px)" srcset="
+                  ./img/catalog-video-container-tablet1x.webp 1x,
+                  ./img/catalog-video-container-tablet2x.webp 2x
+                " />
+              <source type="image/webp" media="(min-width: 320px)" srcset="
+                  ./img/catalog-video-container-mobile1x.webp 1x,
+                  ./img/catalog-video-container-mobile2x.webp 2x
+                " />
+              <source media="(min-width: 1150px)" srcset="
+                  ./img/catalog-video-container-desktop1x.jpg       1x,
+                  ./img/catalog-video-container-desktop2x.jpg       2x
+                " />
+              <source media="(min-width: 768px)" srcset="
+                  ./img/catalog-video-container-tablet1x.jpg       1x,
+                  ./img/catalog-video-container-tablet2x.jpg       2x
+                " />
+              <img class="catalog-video__container-video" src="img/catalog-video-container-mobile1x.jpg"
+                srcset="img/catalog-video-container-mobile2x.jpg 2x" alt="Большая корзинка для игрушек"/>
+            </picture>
             <a class="catalog-video__button-play" href="#"></a>
           </div>
           <p class="catalog-video__description">
